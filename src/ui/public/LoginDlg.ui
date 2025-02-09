@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>LoginDlg</class>
+    <widget class="QDialog" name="LoginDlg">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>543</width>
+                <height>379</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>登录-图书借阅管理系统</string>
+        </property>
+        <widget class="QLabel" name="bookmsLabel">
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>10</y>
+                    <width>481</width>
+                    <height>51</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>字酷堂石刻体</family>
+                    <pointsize>28</pointsize>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>图书借阅管理系统</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QTextEdit" name="instructionsTextEdit">
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>290</x>
+                    <y>100</y>
+                    <width>201</width>
+                    <height>201</height>
+                </rect>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" name="label">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>330</y>
+                    <width>501</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>方正兰亭黑简体</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>Copyleft (c) 2024 曾来. GPLv3协议.</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>270</y>
+                    <width>191</width>
+                    <height>29</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                    <widget class="QPushButton" name="loginPushButton">
+                        <property name="font">
+                            <font>
+                                <pointsize>12</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>登录</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="signupPushButton">
+                        <property name="font">
+                            <font>
+                                <pointsize>12</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>注册</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QSplitter" name="splitter">
+            <property name="geometry">
+                <rect>
+                    <x>40</x>
+                    <y>230</y>
+                    <width>221</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <widget class="QLabel" name="passwordLabel">
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>密码</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="passwordLineEdit">
+                <property name="font">
+                    <font>
+                        <pointsize>16</pointsize>
+                    </font>
+                </property>
+                <property name="maxLength">
+                    <number>12</number>
+                </property>
+                <property name="echoMode">
+                    <enum>QLineEdit::EchoMode::Password</enum>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QSplitter" name="splitter_2">
+            <property name="geometry">
+                <rect>
+                    <x>40</x>
+                    <y>190</y>
+                    <width>221</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <widget class="QLabel" name="accountLabel">
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>账号</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="accountLineEdit">
+                <property name="font">
+                    <font>
+                        <pointsize>16</pointsize>
+                    </font>
+                </property>
+                <property name="maxLength">
+                    <number>6</number>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

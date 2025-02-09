@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>BookSelectForm</class>
+    <widget class="QWidget" name="BookSelectForm">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>770</width>
+                <height>391</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <widget class="QGroupBox" name="groupBoxBookFilters">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>751</width>
+                    <height>81</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>筛选条件（ISBN精确查询优先于其他筛选，不为空时自动忽略其他条件）</string>
+            </property>
+            <widget class="QPushButton" name="pBtnEditBookClear">
+                <property name="geometry">
+                    <rect>
+                        <x>590</x>
+                        <y>50</y>
+                        <width>71</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>清空</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pBtnEditBookQuery">
+                <property name="geometry">
+                    <rect>
+                        <x>670</x>
+                        <y>50</y>
+                        <width>71</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>查询</string>
+                </property>
+            </widget>
+            <widget class="QSplitter" name="splitter">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>731</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <widget class="QWidget" name="formLayoutWidget_2">
+                    <layout class="QFormLayout" name="formLayout_2">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookByISBNLabel">
+                                <property name="text">
+                                    <string>ISBN</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QLineEdit" name="queryBookByISBN">
+                                <property name="maxLength">
+                                    <number>13</number>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+                <widget class="QWidget" name="formLayoutWidget_3">
+                    <layout class="QFormLayout" name="formLayout_3">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookByNameLabel">
+                                <property name="text">
+                                    <string>书名</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QLineEdit" name="queryBookByName">
+                                <property name="maxLength">
+                                    <number>50</number>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+                <widget class="QWidget" name="formLayoutWidget_4">
+                    <layout class="QFormLayout" name="formLayout_4">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookByAuthorLabel">
+                                <property name="text">
+                                    <string>作者</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QLineEdit" name="queryBookByAuthor">
+                                <property name="maxLength">
+                                    <number>50</number>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+                <widget class="QWidget" name="formLayoutWidget_5">
+                    <layout class="QFormLayout" name="formLayout_5">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookByLevelLabel">
+                                <property name="text">
+                                    <string>类型</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QComboBox" name="queryBookByLevel">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>80</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <item>
+                                    <property name="text">
+                                        <string>所有图书</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>普通图书</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>珍贵图书</string>
+                                    </property>
+                                </item>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_2">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>50</y>
+                        <width>571</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <widget class="QWidget" name="formLayoutWidget_7">
+                    <layout class="QFormLayout" name="formLayout_7">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookByPublisherLabel">
+                                <property name="text">
+                                    <string>出版社</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QLineEdit" name="queryBookByPublisher">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>0</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="maxLength">
+                                    <number>100</number>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+                <widget class="QWidget" name="formLayoutWidget">
+                    <layout class="QFormLayout" name="formLayout">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="queryBookDateLabel">
+                                <property name="text">
+                                    <string>出版日期区间</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                <item>
+                                    <widget class="QDateEdit" name="queryBookStartDate"/>
+                                </item>
+                                <item>
+                                    <widget class="QDateEdit" name="queryBookEndDate"/>
+                                </item>
+                            </layout>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QTableWidget" name="tableWidTabEditBook">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>90</y>
+                    <width>751</width>
+                    <height>291</height>
+                </rect>
+            </property>
+            <column>
+                <property name="text">
+                    <string>图书ID</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>ISBN</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>图书名称</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>作者</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>版次</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>图书等级</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>出版日期</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>总册数</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>库存余量</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>定价</string>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>出版社</string>
+                </property>
+            </column>
+        </widget>
+        <widget class="QSplitter" name="sppp">
+            <property name="geometry">
+                <rect>
+                    <x>500</x>
+                    <y>380</y>
+                    <width>120</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QSplitter" name="splitter_3">
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>450</y>
+                    <width>571</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

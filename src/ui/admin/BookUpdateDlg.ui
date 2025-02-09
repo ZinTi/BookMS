@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>BookUpdateDlg</class>
+    <widget class="QDialog" name="BookUpdateDlg">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>371</width>
+                <height>390</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Dialog</string>
+        </property>
+        <widget class="QWidget" name="formLayoutWidget_4">
+            <property name="geometry">
+                <rect>
+                    <x>60</x>
+                    <y>50</y>
+                    <width>251</width>
+                    <height>291</height>
+                </rect>
+            </property>
+            <layout class="QFormLayout" name="fL">
+                <item row="0" column="0">
+                    <widget class="QLabel" name="labelBookId">
+                        <property name="text">
+                            <string>图书号:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="0" column="1">
+                    <widget class="QLineEdit" name="editBookId">
+                        <property name="maxLength">
+                            <number>8</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="0">
+                    <widget class="QLabel" name="labelBookISBN">
+                        <property name="text">
+                            <string>ISBN:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="1">
+                    <widget class="QLineEdit" name="editBookISBN">
+                        <property name="maxLength">
+                            <number>13</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="0">
+                    <widget class="QLabel" name="labelBookName">
+                        <property name="text">
+                            <string>图书名称：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="1">
+                    <widget class="QLineEdit" name="editBookName">
+                        <property name="maxLength">
+                            <number>50</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="0">
+                    <widget class="QLabel" name="labelBookAuthor">
+                        <property name="text">
+                            <string>作者：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="1">
+                    <widget class="QLineEdit" name="editBookAuthor">
+                        <property name="maxLength">
+                            <number>50</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="4" column="0">
+                    <widget class="QLabel" name="labelBookEdition">
+                        <property name="text">
+                            <string>版次：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="4" column="1">
+                    <widget class="QLineEdit" name="editBookEdition">
+                        <property name="maxLength">
+                            <number>20</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="5" column="0">
+                    <widget class="QLabel" name="labelBookPubDate">
+                        <property name="text">
+                            <string>出版日期：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="5" column="1">
+                    <widget class="QDateEdit" name="editBookPubDate"/>
+                </item>
+                <item row="6" column="0">
+                    <widget class="QLabel" name="labelBookTotal">
+                        <property name="text">
+                            <string>总册数：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="6" column="1">
+                    <widget class="QSpinBox" name="editBookTotal">
+                        <property name="maximum">
+                            <number>999</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="7" column="0">
+                    <widget class="QLabel" name="labelBookRemain">
+                        <property name="text">
+                            <string>库存余量：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="7" column="1">
+                    <widget class="QSpinBox" name="editBookRemain">
+                        <property name="maximum">
+                            <number>999</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="8" column="0">
+                    <widget class="QLabel" name="labelBookPrice">
+                        <property name="text">
+                            <string>定价：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="8" column="1">
+                    <widget class="QDoubleSpinBox" name="editBookPrice">
+                        <property name="maximum">
+                            <double>99999.990000000005239</double>
+                        </property>
+                    </widget>
+                </item>
+                <item row="9" column="0">
+                    <widget class="QLabel" name="labelBookPublisher">
+                        <property name="text">
+                            <string>出版社：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="9" column="1">
+                    <widget class="QLineEdit" name="editBookPublisher">
+                        <property name="maxLength">
+                            <number>50</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="10" column="0">
+                    <widget class="QLabel" name="labelBookLevel">
+                        <property name="text">
+                            <string>图书等级：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="10" column="1">
+                    <widget class="QComboBox" name="editBookLevel">
+                        <item>
+                            <property name="text">
+                                <string>普通图书</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>珍贵图书</string>
+                            </property>
+                        </item>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QLabel" name="label">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>20</y>
+                    <width>331</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>变更图书信息</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>350</y>
+                    <width>166</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="hL">
+                <item>
+                    <widget class="QPushButton" name="pBtnReset">
+                        <property name="text">
+                            <string>还原</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="pBtnSubmit">
+                        <property name="text">
+                            <string>变更</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
