@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>LoanAddForm</class>
+    <widget class="QWidget" name="LoanAddForm">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>767</width>
+                <height>420</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <widget class="QLabel" name="labelTitleHandleBookBorrow">
+            <property name="geometry">
+                <rect>
+                    <x>620</x>
+                    <y>0</y>
+                    <width>141</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <bold>true</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>借阅事务-办理借阅</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QGroupBox" name="gBoxBook">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>60</y>
+                    <width>231</width>
+                    <height>301</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>登记目标图书</string>
+            </property>
+            <widget class="QWidget" name="fLWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>30</y>
+                        <width>191</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <layout class="QFormLayout" name="fL">
+                    <item row="0" column="0">
+                        <widget class="QLabel" name="labelBookId">
+                            <property name="text">
+                                <string>图书ID</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="0" column="1">
+                        <widget class="QLineEdit" name="editBookId"/>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="lWidget1">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>260</y>
+                        <width>166</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="hL">
+                    <item>
+                        <widget class="QPushButton" name="pBtnClearBook">
+                            <property name="text">
+                                <string>清空</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="pBtnQueryBook">
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QTextEdit" name="msgDisplayBook">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>70</y>
+                        <width>191</width>
+                        <height>181</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" name="gBoxUser">
+            <property name="geometry">
+                <rect>
+                    <x>270</x>
+                    <y>60</y>
+                    <width>231</width>
+                    <height>301</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>登记目标用户</string>
+            </property>
+            <widget class="QWidget" name="fLWidget_2">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>30</y>
+                        <width>191</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <layout class="QFormLayout" name="fL_2">
+                    <item row="0" column="0">
+                        <widget class="QLabel" name="labelUserID">
+                            <property name="text">
+                                <string>用户ID</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="0" column="1">
+                        <widget class="QLineEdit" name="editUserId"/>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="lWidget2">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>260</y>
+                        <width>166</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="hL_2">
+                    <item>
+                        <widget class="QPushButton" name="pBtnClearUser">
+                            <property name="text">
+                                <string>清空</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="pBtnQueryUser">
+                            <property name="text">
+                                <string>查询</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QTextEdit" name="msgDisplayUser">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>70</y>
+                        <width>191</width>
+                        <height>181</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" name="gBoxLoan">
+            <property name="geometry">
+                <rect>
+                    <x>520</x>
+                    <y>60</y>
+                    <width>231</width>
+                    <height>301</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>操作面板</string>
+            </property>
+            <widget class="QTextEdit" name="msgDisplayLoan">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>30</y>
+                        <width>191</width>
+                        <height>221</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QWidget" name="lWidget3">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>260</y>
+                        <width>166</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="hL_3">
+                    <item>
+                        <widget class="QPushButton" name="pBtnClearLoan">
+                            <property name="text">
+                                <string>清空</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="pBtnHandleLoan">
+                            <property name="text">
+                                <string>办理借阅</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MenuFormAdmin</class>
+    <widget class="QWidget" name="MenuFormAdmin">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>150</width>
+                <height>320</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <widget class="QLabel" name="funcLabel">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>131</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>站酷酷黑</family>
+                    <pointsize>18</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>功能菜单</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QToolBox" name="toolBox">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>60</y>
+                    <width>111</width>
+                    <height>241</height>
+                </rect>
+            </property>
+            <property name="currentIndex">
+                <number>0</number>
+            </property>
+            <widget class="QWidget" name="tPageUser">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>111</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <attribute name="label">
+                    <string>用户管理</string>
+                </attribute>
+                <widget class="QPushButton" name="pBtnAddUser">
+                    <property name="geometry">
+                        <rect>
+                            <x>12</x>
+                            <y>5</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>创建用户</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnEditUser">
+                    <property name="geometry">
+                        <rect>
+                            <x>12</x>
+                            <y>27</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>信息维护</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnAllocatePermissions">
+                    <property name="geometry">
+                        <rect>
+                            <x>12</x>
+                            <y>49</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>权限分配</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget" name="tPageBook">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>111</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <attribute name="label">
+                    <string>图书管理</string>
+                </attribute>
+                <widget class="QPushButton" name="pBtnAddBook">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>1</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>新增图书</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnEditBook">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>23</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>信息维护</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget" name="tPageLoan">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>111</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <attribute name="label">
+                    <string>借阅事务</string>
+                </attribute>
+                <widget class="QPushButton" name="pBtnHandleBookBorrow">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>办理借阅</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnHandleBookReturn">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>33</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>信息维护</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget" name="tPageData">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>111</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <attribute name="label">
+                    <string>数据统计</string>
+                </attribute>
+                <widget class="QPushButton" name="pBtnShowUserData">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>用户数据</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnShowBookData">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>33</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>馆藏数据</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget" name="tPagePersonal">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>111</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <attribute name="label">
+                    <string>个人管理</string>
+                </attribute>
+                <widget class="QPushButton" name="pBtnCancelAccount">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>33</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>注销账号</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnEditPersonalInfo">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>编辑资料</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="pBtnLogout">
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>55</y>
+                            <width>80</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QPushButton#pBtnLogout {
+                            background-color: red;
+                            color: white;
+                            }
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string>退出登录</string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

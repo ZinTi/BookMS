@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>PerAccEditForm</class>
+    <widget class="QWidget" name="PerAccEditForm">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>767</width>
+                <height>420</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <widget class="QLabel" name="labelTitleEditPersonalInfo">
+            <property name="geometry">
+                <rect>
+                    <x>620</x>
+                    <y>0</y>
+                    <width>141</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <bold>true</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>个人管理-编辑资料</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxTabEditPersonalInfoBaseInfo">
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>90</y>
+                    <width>211</width>
+                    <height>181</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>基本信息</string>
+            </property>
+            <widget class="QWidget" name="layWidg">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>40</y>
+                        <width>191</width>
+                        <height>109</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="hLayoutTabEditPersonalInfo">
+                    <item>
+                        <layout class="QVBoxLayout" name="vLayoutTabEditPersonalInfoLabelBaseInfo">
+                            <item>
+                                <widget class="QLabel" name="idLabel">
+                                    <property name="text">
+                                        <string>账号：</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="nameLabel">
+                                    <property name="text">
+                                        <string>姓名：</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="genderLabel">
+                                    <property name="text">
+                                        <string>性别：</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="userTypeLabel">
+                                    <property name="text">
+                                        <string>身份：</string>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QVBoxLayout" name="vLayoutTabEditPersonalInfo">
+                            <item>
+                                <widget class="QLineEdit" name="idLineEdit">
+                                    <property name="text">
+                                        <string/>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="nameLineEdit"/>
+                            </item>
+                            <item>
+                                <layout class="QHBoxLayout" name="hLayoutTabEditPersonalInfoGender">
+                                    <item>
+                                        <widget class="QRadioButton" name="maleRadioButton">
+                                            <property name="text">
+                                                <string>男性</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QRadioButton" name="femaleRadioButton">
+                                            <property name="text">
+                                                <string>女性</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="userTypeLineEdit">
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxTabEditPersonalInfoContact">
+            <property name="geometry">
+                <rect>
+                    <x>390</x>
+                    <y>90</y>
+                    <width>231</width>
+                    <height>181</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>联系方式</string>
+            </property>
+            <widget class="QWidget" name="layWidg_2">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>211</width>
+                        <height>141</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="myContactVerticalLayout">
+                    <item>
+                        <layout class="QHBoxLayout" name="hLayoutMyContact">
+                            <item>
+                                <layout class="QVBoxLayout" name="myContactLabelVerticalLayout">
+                                    <item>
+                                        <widget class="QLabel" name="myEmailLabel">
+                                            <property name="text">
+                                                <string>电子邮箱：</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="myTelephoneLabel">
+                                            <property name="text">
+                                                <string>电话号码：</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="myAddressLabel">
+                                            <property name="text">
+                                                <string>通讯地址：</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="myContactInputVerticalLayout">
+                                    <item>
+                                        <widget class="QLineEdit" name="myEmailLineEdit">
+                                            <property name="maxLength">
+                                                <number>30</number>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLineEdit" name="myTelephoneLineEdit">
+                                            <property name="maxLength">
+                                                <number>11</number>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QComboBox" name="myProvinceComboBox">
+                                            <item>
+                                                <property name="text">
+                                                    <string>北京市</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>天津市</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>河北省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>山西省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>内蒙古自治区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>辽宁省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>吉林省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>黑龙江省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>上海市</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>江苏省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>浙江省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>安徽省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>福建省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>江西省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>山东省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>河南省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>湖北省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>湖南省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>广东省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>广西壮族自治区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>海南省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>重庆市</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>四川省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>贵州省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>云南省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>西藏自治区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>陕西省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>甘肃省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>青海省</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>宁夏回族自治区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>新疆维吾尔自治区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>香港特别行政区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>澳门特别行政区</string>
+                                                </property>
+                                            </item>
+                                            <item>
+                                                <property name="text">
+                                                    <string>中国台湾地区</string>
+                                                </property>
+                                            </item>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <widget class="QPlainTextEdit" name="myAddressPlainTextEdit">
+                            <property name="maximumSize">
+                                <size>
+                                    <width>16777215</width>
+                                    <height>40</height>
+                                </size>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>310</x>
+                    <y>310</y>
+                    <width>206</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                    <widget class="QToolButton" name="refreshToolButton">
+                        <property name="minimumSize">
+                            <size>
+                                <width>100</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>刷新</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QToolButton" name="updateToolButton">
+                        <property name="minimumSize">
+                            <size>
+                                <width>100</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>执行更新</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

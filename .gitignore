@@ -1,0 +1,30 @@
+# gitignore file for BookMS project
+
+# 编辑器/IDE 文件
+.idea/
+.vscode/
+*.swp
+
+# 构建目录与数据测试目录
+build/
+cmake-build-debug/
+cmake-build-release/
+data/
+
+# 其他文件
+*.o
+*.obj
+*.tmp
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.tar.gz
+*.zip
+*.7z
+*.db
+
+
+
+
